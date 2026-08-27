@@ -1,0 +1,12 @@
+# dsh-hitl-confirm profile bundle patch (declared by the `dsh.bundle.patch`
+# manifest field): applied when this package appears in a profile's
+# `dsh.profile.bundles` list.
+#
+# One host row (registers the `hitl_confirm` model tool and the
+# `/hitl-confirm` human command through `ctx.tools` / `ctx.commands`).
+# The browser half is discovered automatically through the package.json
+# `dsh.client` declaration (served at /plugins/dsh-hitl-confirm/client.js).
+
+- insert:
+    - id: hitl-confirm
+      name: 'dsh-hitl-confirm'
